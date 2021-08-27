@@ -32,7 +32,7 @@ app.post("/", function(req,res) {
 
   const options = {
     method: "POST",
-    auth: "atishay:A1c9496a72c9be6d163fb1df8ebb358d7-us5"
+    auth: "atishay:1c9496a72c9be6d163fb1df8ebb358d7-us5"
   }
 
   const request= https.request(url, options, function(response){
