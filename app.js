@@ -1,12 +1,13 @@
+
 const express= require("express");
-const bodeParser= require("body-parser");
+const bodyParser= require("body-parser");
 const request=require("request");
 const https=require("https");
 
 const app=express();
 
 app.use(express.static("public"));
-app.use(bodeParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({extended: true}));
 
 app.post("/", function(req,res) {
   const firstName=req.body.fName;
